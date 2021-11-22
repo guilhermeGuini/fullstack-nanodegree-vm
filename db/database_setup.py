@@ -42,7 +42,7 @@ class MenuItem(Base):
 ####### insert at end of file #######
 
 engine = create_engine(
-    "postgresql+psycopg2://postgres:@localhost:5432/postgres",
+    "postgresql+psycopg2://postgres:alelo123@localhost:5432/postgres",
     connect_args={'options': '-csearch_path=test'})
 
 Base.metadata.create_all(engine)

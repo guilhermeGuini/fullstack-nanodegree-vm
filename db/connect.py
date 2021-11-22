@@ -8,7 +8,7 @@ Base = declarative_base()
 class Connection:
 
     def connect(self):
-        engine = create_engine("postgresql+psycopg2://postgres:@localhost:5432/postgres", connect_args={'options': '-csearch_path=test'})
+        engine = create_engine("postgresql+psycopg2://postgres:alelo123@localhost:5432/postgres", connect_args={'options': '-csearch_path=test'})
         Base.metadata.bind = engine
         DBSession = sessionmaker(bind=engine)
         return DBSession()

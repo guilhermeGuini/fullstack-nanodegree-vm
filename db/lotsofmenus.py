@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from database_setup import Restaurant, Base, MenuItem
  
 engine = create_engine(
-    "postgresql+psycopg2://postgres:@localhost:5432/postgres",
+    "postgresql+psycopg2://postgres:alelo123@localhost:5432/postgres",
     connect_args={'options': '-csearch_path=test'})
 # Bind the engine to the metadata of the Base class so that the
 # declaratives can be accessed through a DBSession instance
